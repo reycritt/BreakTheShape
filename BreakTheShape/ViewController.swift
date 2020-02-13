@@ -15,26 +15,34 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        //timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: projectileMove(_:))
-        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(projectileMove(_:)), userInfo: nil, repeats: true)
+        self.projectile.frame.origin.y = -300
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(projectileMove(_:)), userInfo: nil, repeats: true)
     }
     
     @IBAction func projectilePopped(_ sender: Any) {
-        //timer?.invalidate()
-        //self.projectile.frame.origin.y -= 200
-        UIView.animate(withDuration: 0, animations: {
-            self.projectile.frame.origin.y += 200
-        })
+        timer?.invalidate()
+        self.projectile.frame.origin.y = -300
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(projectileMove(_:)), userInfo: nil, repeats: true)
     }
     
-    @objc func projectileMove(_ sender: Any){
-        //UIView.animate(withDuration: 0, animations: {
-            //self.projectile.frame.origin.y += 10
-        //})
+    @objc func projectileMove(_ sender: Timer){
+        self.projectile.frame.origin.y += 20
+        print(projectile.frame.origin.y)
+        if (projectile.frame.origin.y >= 600){
+            print("over")
+            timer?.invalidate()
+            self.projectile.frame.origin.y = -300
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(projectileMove(_:)), userInfo: nil, repeats: true)
+        }
+        /*
+         if (projectile.frame.height <= 100){
+         timer?.invalidate()
+         self.projectile.frame.origin.y = -300
+         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(projectileMove(_:)), userInfo: nil, repeats: true)
+         }
+         */
     }
-
-
+    
+    
 }
 
