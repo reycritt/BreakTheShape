@@ -103,8 +103,8 @@
 				8BC1BC5D23F50A0A006AFDD6 /* SceneDelegate.swift */,
 				8BC1BC5F23F50A0A006AFDD6 /* ViewController.swift */,
 				8BC1BC6123F50A0A006AFDD6 /* Main.storyboard */,
-				8BC1BC6423F50A0C006AFDD6 /* Assets.xcassets */,
 				8BC1BC6623F50A0C006AFDD6 /* LaunchScreen.storyboard */,
+				8BC1BC6423F50A0C006AFDD6 /* Assets.xcassets */,
 				8BC1BC6923F50A0C006AFDD6 /* Info.plist */,
 			);
 			path = BreakTheShape;
