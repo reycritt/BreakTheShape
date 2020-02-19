@@ -16,6 +16,7 @@
 		8BC1BC7323F50A0C006AFDD6 /* BreakTheShapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1BC7223F50A0C006AFDD6 /* BreakTheShapeTests.swift */; };
 		8BC1BC7E23F50A0C006AFDD6 /* BreakTheShapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1BC7D23F50A0C006AFDD6 /* BreakTheShapeUITests.swift */; };
 		9A1022AA23F611F100F39617 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1022A923F611F100F39617 /* Square.swift */; };
+		9AC1DC3123FDE1980094B44B /* StartMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1DC3023FDE1980094B44B /* StartMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8BC1BC7D23F50A0C006AFDD6 /* BreakTheShapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakTheShapeUITests.swift; sourceTree = "<group>"; };
 		8BC1BC7F23F50A0C006AFDD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A1022A923F611F100F39617 /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		9AC1DC3023FDE1980094B44B /* StartMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				8BC1BC5B23F50A0A006AFDD6 /* AppDelegate.swift */,
 				8BC1BC5D23F50A0A006AFDD6 /* SceneDelegate.swift */,
+				9AC1DC3023FDE1980094B44B /* StartMenuViewController.swift */,
 				8BC1BC5F23F50A0A006AFDD6 /* ViewController.swift */,
 				9A1022A923F611F100F39617 /* Square.swift */,
 				8BC1BC6123F50A0A006AFDD6 /* Main.storyboard */,
@@ -266,6 +269,7 @@
 				8BC1BC6023F50A0A006AFDD6 /* ViewController.swift in Sources */,
 				8BC1BC5C23F50A0A006AFDD6 /* AppDelegate.swift in Sources */,
 				8BC1BC5E23F50A0A006AFDD6 /* SceneDelegate.swift in Sources */,
+				9AC1DC3123FDE1980094B44B /* StartMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
